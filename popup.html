@@ -39,7 +39,7 @@
             background-color: #f5f5f5;
             clear: both;
             height: 50px;
-            margin: auto;
+            margin-top: 30px;
             max-width: 900px;
             padding: 0 20px 10px 20px;
         }
@@ -60,7 +60,6 @@
         }
         
         #rightSide {
-            border-left: 3px solid;
             float: right;
             width: 45%;
             text-align: center;
@@ -75,6 +74,12 @@
         
         span {
             text-decoration: underline;
+        }
+        
+        ul {
+            font-size: 12px;
+            margin: 0px;
+            width: 60%;
         }
 
     </style>
@@ -94,12 +99,14 @@
     </header>
     <div style="width: 100%;">
         <div id="leftSide">
-            <img id="verifyImg" src="https://cdn.pixabay.com/photo/2017/01/13/01/22/ok-1976099_1280.png"> 
-            <p>Items that AMP supports!</p>
+            <img id="verifyImg" src="https://cdn.pixabay.com/photo/2017/01/13/01/22/ok-1976099_1280.png">
+            <p>Ads & Analytics supported by AMP</p>
+            <div id="supported"></div>
         </div>
         <div id="rightSide">
-            <img id="verifyImg" src="https://cdn.pixabay.com/photo/2017/02/12/21/29/false-2061132_1280.png"> 
-            <p>Items that AMP does <span>NOT</span> support!</p>
+            <img id="verifyImg" src="https://cdn.pixabay.com/photo/2017/02/12/21/29/false-2061132_1280.png">
+            <p>Ads & Analytics <span>NOT</span> supported by AMP!</p>
+            <div id="notSupported"></div>
         </div>
     </div>
     <div style="clear:both"></div>
