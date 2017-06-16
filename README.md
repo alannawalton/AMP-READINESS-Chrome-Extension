@@ -6,7 +6,7 @@ The AMP Readiness Tool (ART) is designed to assist the Sales team in determining
 
 ## Using the tool: 
 1. Direct your Chrome tab towards the website whose AMPlitude is in question
-2. Click the Blue AMP symbol
+2. Click the AMP Chrome Extension in your toolbar
 3. Wait for the data to load
 4. Enjoy!
 
