@@ -1,3 +1,9 @@
+
+/**
+   * Callback function that sends a response upon receiving message
+   * @param {!Object} request - Message Object
+   * @param {!Object} sender - Message sender defined here
+   */
 chrome.runtime.onMessage.addListener(function (request, sender) {
     if (request.action == "getSource") {
         htmlOfTab = request.source;
@@ -6,8 +12,9 @@ chrome.runtime.onMessage.addListener(function (request, sender) {
     }
 });
 
-function onWindowLoad() {
 
+/** Event called when window is loaded */
+function onWindowLoad() {
     var htmlOfTab;
     var loading1 = document.getElementById("supported");
     var loading2 = document.getElementById("notSupported");
@@ -19,10 +26,13 @@ function onWindowLoad() {
     }, function () {
 
     });
-
-    
 }
 
+/**
+   * Callback function that sends a response upon receiving message
+   * @param {String} html - String containing all HTML on the page
+   * @return {Object} 
+   */
 function findDetectedApps(html) {
     var htmlString = html;
     let linkToApps = (chrome.runtime.getURL('apps.json'));
@@ -32,6 +42,7 @@ function findDetectedApps(html) {
 
     xhr.open("GET", linkToApps, true);
     xhr.onreadystatechange = function () {
+        // Wait until the response is done (onload or onerror).
         if (xhr.readyState == 4) {
             listAllApps = JSON.parse(xhr.response).apps;
             detectedApps = findAllItems(listAllApps, htmlString);
