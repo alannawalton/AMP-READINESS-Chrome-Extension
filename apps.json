@@ -140,14 +140,6 @@
 			},
 			"website": "http://www.accessibleportal.com"
 		},
-		"Act-On": {
-			"cats": [
-				"32"
-			],
-			"env": "^ActOn$",
-			"icon": "ActOn.png",
-			"website": "http://act-on.com"
-		},
 		"AdInfinity": {
 			"cats": [
 				"36"
@@ -953,16 +945,6 @@
 			],
 			"script": "bootstrap-table(?:\\.min)?\\.js",
 			"website": "http://bootstrap-table.wenzhixin.net.cn/"
-		},
-		"Bounce Exchange": {
-			"cats": [
-				"32"
-			],
-			"env": "^bouncex$",
-			"html": "<script[^>]*>[^>]+\\.src\\s*=\\s*['\"](?:https?:)?//tag\\.bounceexchange\\.com/",
-			"icon": "Bounce Exchange.svg",
-			"script": "^https?://tag\\.bounceexchange\\.com/",
-			"website": "http://www.bounceexchange.com"
 		},
 		"Brother": {
 			"cats": [
@@ -2163,15 +2145,6 @@
 			},
 			"website": "http://eleanor-cms.ru"
 		},
-		"Eloqua": {
-			"cats": [
-				"32"
-			],
-			"env": "^elq(?:SiteID|Load|CurESite)$",
-			"icon": "Oracle.png",
-			"script": "elqCfg\\.js",
-			"website": "http://eloqua.com"
-		},
 		"EmbedThis Appweb": {
 			"cats": [
 				"22"
@@ -3230,15 +3203,6 @@
 			"script": "^//static\\.hotjar\\.com/c/hotjar-",
 			"website": "https://www.hotjar.com"
 		},
-		"HubSpot": {
-			"cats": [
-				"32"
-			],
-			"env": "^(?:_hsq|hubspot)$",
-			"html": "<!-- Start of Async HubSpot",
-			"icon": "HubSpot.png",
-			"website": "http://hubspot.com"
-		},
 		"Hugo": {
 			"cats": [
 				"1",
@@ -3430,17 +3394,6 @@
 				"Server": "Indy(?:/([\\d.]+))?\\;version:\\1"
 			},
 			"website": "http://indyproject.org"
-		},
-		"Infusionsoft": {
-			"cats": [
-				"32"
-			],
-			"html": [
-				"<input [^>]*name=\"infusionsoft_version\" [^>]*value=\"([^>]*)\" [^>]*\\/>\\;version:\\1",
-				"<input [^>]*value=\"([^>]*)\" [^>]*name=\"infusionsoft_version\" [^>]*\\/>\\;version:\\1"
-			],
-			"icon": "infusionsoft.svg",
-			"website": "http://infusionsoft.com"
 		},
 		"InstantCMS": {
 			"cats": [
@@ -3682,16 +3635,6 @@
 			},
 			"icon": "jimdo.png",
 			"website": "http://www.jimdo.com/"
-		},
-		"Jirafe": {
-			"cats": [
-				"10",
-				"32"
-			],
-			"env": "^jirafe$",
-			"icon": "Jirafe.png",
-			"script": "/jirafe\\.js",
-			"website": "http://jirafe.com"
 		},
 		"Jive": {
 			"cats": [
@@ -4361,24 +4304,6 @@
 			],
 			"website": "http://www.magentocommerce.com"
 		},
-		"Mailchimp": {
-			"cats": [
-				"32"
-			],
-			"html": [
-				"<form [^>]*data-mailchimp-url",
-				"<form [^>]*id=\"mc-embedded-subscribe-form\"",
-				"<form [^>]*name=\"mc-embedded-subscribe-form\"",
-				"<input [^>]*id=\"mc-email\"\\;confidence:20",
-				"<!-- Begin MailChimp Signup Form -->"
-			],
-			"icon": "mailchimp.svg",
-			"script": [
-				"s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js",
-				"cdn-images.mailchimp.com/[^>]*.css"
-			],
-			"website": "http://mailchimp.com"
-		},
 		"Mambo": {
 			"cats": [
 				"1"
@@ -4406,15 +4331,6 @@
 			"icon": "ManyContacts.png",
 			"script": "\\/assets\\/js\\/manycontacts\\.min\\.js",
 			"website": "http://www.manycontacts.com"
-		},
-		"Marketo": {
-			"cats": [
-				"32"
-			],
-			"env": "^Munchkin$",
-			"icon": "Marketo.png",
-			"script": "munchkin\\.marketo\\.net/munchkin\\.js",
-			"website": "http://www.marketo.com"
 		},
 		"Materialize CSS": {
 			"cats": [
@@ -5472,19 +5388,6 @@
 			},
 			"website": "http://pagekit.com"
 		},
-		"Pardot": {
-			"cats": [
-				"32"
-			],
-			"env": "^pi(?:Tracker|Hostname|Protocol|CId|AId)$",
-			"headers": {
-				"X-Pardot-LB": "",
-				"X-Pardot-Route": "",
-				"X-Pardot-Rsp": ""
-			},
-			"icon": "Pardot.png",
-			"website": "http://pardot.com"
-		},
 		"Parse.ly": {
 			"cats": [
 				"10"
@@ -5946,15 +5849,6 @@
 			},
 			"website": "http://www.rcms.fi"
 		},
-		"RD Station": {
-			"cats": [
-				"32"
-			],
-			"env": "^RDStation$",
-			"icon": "RD Station.png",
-			"script": "d335luupugsy2\\.cloudfront\\.net/js/loader-scripts/.*-loader\\.js",
-			"website": "http://rdstation.com.br"
-		},
 		"RDoc": {
 			"cats": [
 				"4"
@@ -6157,23 +6051,6 @@
 			],
 			"icon": "Robin.png",
 			"website": "http://www.robinhq.com"
-		},
-		"RockRMS": {
-			"cats": [
-				"1",
-				"11",
-				"32"
-			],
-			"icon": "RockRMS.svg",
-			"implies": [
-				"Windows Server",
-				"IIS",
-				"Microsoft ASP.NET"
-			],
-			"meta": {
-				"generator": "^Rock v.*"
-			},
-			"website": "http://www.rockrms.com"
 		},
 		"RoundCube": {
 			"cats": [
@@ -6988,15 +6865,6 @@
 			"icon": "Sulu.svg",
 			"implies": "Symfony",
 			"website": "http://sulu.io"
-		},
-		"SumoMe": {
-			"cats": [
-				"5",
-				"32"
-			],
-			"icon": "SumoMe.png",
-			"script": "load\\.sumome\\.com",
-			"website": "http://sumome.com"
 		},
 		"SunOS": {
 			"cats": [
@@ -8189,16 +8057,6 @@
 				"PHP"
 			],
 			"website": "http://yiiframework.com"
-		},
-		"Yoast SEO": {
-			"cats": [
-				"32"
-			],
-			"html": [
-				"<!-- This site is optimized with the Yoast"
-			],
-			"icon": "Yoast SEO.png",
-			"website": "http://yoast.com"
 		},
 		"YouTrack": {
 			"cats": [

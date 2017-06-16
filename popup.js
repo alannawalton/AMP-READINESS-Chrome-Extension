@@ -9,13 +9,18 @@ chrome.runtime.onMessage.addListener(function (request, sender) {
 function onWindowLoad() {
 
     var htmlOfTab;
-
+    var loading1 = document.getElementById("supported");
+    var loading2 = document.getElementById("notSupported");
+    loading1.innerHTML = "Loading...";
+    loading2.innerHTML = "Loading...";
+    
     chrome.tabs.executeScript(null, {
         file: "getPagesSource.js"
     }, function () {
 
     });
 
+    
 }
 
 function findDetectedApps(html) {
@@ -31,6 +36,10 @@ function findDetectedApps(html) {
             listAllApps = JSON.parse(xhr.response).apps;
             detectedApps = findAllItems(listAllApps, htmlString);
             console.log("detectedApps", detectedApps);
+            var loading1 = document.getElementById("supported");
+            var loading2 = document.getElementById("notSupported");
+            loading1.innerHTML = "";
+            loading2.innerHTML = "";
             document.getElementById('supported').appendChild(makeList(detectedApps.supported));
             document.getElementById('notSupported').appendChild(makeList(detectedApps.notSupported));
         }
@@ -104,6 +113,7 @@ function isSupported(key) {
 
 
 function makeList(array) {
+    
     console.log("array", array);
     // Create the list element:
     var list = document.createElement('ul');
