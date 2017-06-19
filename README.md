@@ -2,7 +2,7 @@
 # AMP Readiness Chrome Extension
 
 ## Introduction: 
-The AMP Readiness Tool (ART) is designed to assist the Sales team in determining whether AMP can be incorporated into a website's existing mobile page. The tool examines, via Chrome Extension, the different services, ads and analytics networks utilized on the page and specifies whether each service currently has AMP support. For the services that aren't supported, workarounds and substitutions will be given in order for the Sales team to better estimate the time and energy required for the website to "GET AMPED UP".
+The AMP Readiness Tool (ART) is designed to assist the Sales team in determining whether AMP can be incorporated into a website's existing mobile page. The tool examines, via Chrome Extension, the different services, ads and analytics networks utilized on the page and specifies whether each service currently has AMP support. For the services that aren't supported, workarounds and substitutions will be given in order for the Sales team to better estimate the time and energy required for the website to get "AMPED" up.
 
 ## Using the tool: 
 1. Direct your Chrome tab towards the website whose potential AMPlitude is in question
