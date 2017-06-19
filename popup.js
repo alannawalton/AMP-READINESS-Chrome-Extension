@@ -161,7 +161,4 @@ function makeList(array) {
     return list;
 }
 
-
-
-
 window.onload = onWindowLoad;
