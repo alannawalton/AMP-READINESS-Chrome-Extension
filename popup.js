@@ -18,7 +18,7 @@ function onWindowLoad() {
     var htmlOfTab;
     var loading1 = document.getElementById("supported");
     var loading2 = document.getElementById("notSupported");
-    loading1.innerHTML = "Loading...";
+    loading1.innerHTML = 'Loading...';
     loading2.innerHTML = "Loading...";
     
     chrome.tabs.executeScript(null, {

@@ -315,19 +315,6 @@
 			"icon": "Allegro RomPager.png",
 			"website": "http://allegrosoft.com/embedded-web-server-s2"
 		},
-		"AlloyUI": {
-			"cats": [
-				"12"
-			],
-			"env": "^AUI$",
-			"icon": "AlloyUI.png",
-			"implies": [
-				"Twitter Bootstrap",
-				"YUI"
-			],
-			"script": "^https?://cdn\\.alloyui\\.com/",
-			"website": "http://www.alloyui.com"
-		},
 		"Amaya": {
 			"cats": [
 				"20"
@@ -403,19 +390,6 @@
 				"angular-material.*\\.js"
 			],
 			"website": "http://material.angularjs.org"
-		},
-		"AngularJS": {
-			"cats": [
-				"12"
-			],
-			"env": "^angular$",
-			"icon": "AngularJS.svg",
-			"script": [
-				"angular(?:\\-|\\.)([\\d.]*\\d)[^/]*\\.js\\;version:\\1",
-				"/([\\d.]+(?:\\-?rc[.\\d]*)*)/angular(?:\\.min)?\\.js\\;version:\\1",
-				"angular.*\\.js"
-			],
-			"website": "http://angularjs.org"
 		},
 		"Apache": {
 			"cats": [
@@ -626,29 +600,6 @@
 			],
 			"website": "http://www.atlassian.com/software/jira/overview/"
 		},
-		"Aurelia": {
-			"cats": [
-				"12"
-			],
-			"html": [
-				"<[^>]+aurelia-app=[^>]",
-				"<[^>]+data-main=[^>]aurelia-bootstrapper",
-				"<[^>]+au-target-id=[^>]\\d"
-			],
-			"icon": "Aurelia.svg",
-			"script": [
-				"aurelia(?:\\.min)?\\.js"
-			],
-			"website": "http://aurelia.io"
-		},
-		"BEM": {
-			"cats": [
-				"12"
-			],
-			"html": "<[^>]+data-bem",
-			"icon": "BEM.png",
-			"website": "http://en.bem.info"
-		},
 		"BIGACE": {
 			"cats": [
 				"1"
@@ -660,16 +611,6 @@
 				"generator": "BIGACE ([\\d.]+)\\;version:\\1"
 			},
 			"website": "http://bigace.de"
-		},
-		"Backbone.js": {
-			"cats": [
-				"12"
-			],
-			"env": "^Backbone$",
-			"icon": "Backbone.js.png",
-			"implies": "Underscore.js",
-			"script": "backbone.*\\.js",
-			"website": "http://backbonejs.org"
 		},
 		"Backdrop": {
 			"cats": [
@@ -728,14 +669,6 @@
 			"script": "bittads\\.com/js/bitt\\.js$",
 			"website": "http://bittads.com"
 		},
-		"Blip.tv": {
-			"cats": [
-				"14"
-			],
-			"html": "<(?:param|embed|iframe)[^>]+blip\\.tv/play",
-			"icon": "Blip.tv.png",
-			"website": "http://blip.tv"
-		},
 		"Bluefish": {
 			"cats": [
 				"20"
@@ -754,14 +687,6 @@
 				"Server": "Boa\\/?([\\d\\.a-z]+)?\\;version:\\1"
 			},
 			"website": "http://www.boa.org"
-		},
-		"Boba.js": {
-			"cats": [
-				"12"
-			],
-			"implies": "Google Analytics",
-			"script": "boba(?:\\.min)?\\.js",
-			"website": "http://boba.space150.com"
 		},
 		"Bolt": {
 			"cats": [
@@ -785,19 +710,6 @@
 			"icon": "Bonfire.png",
 			"implies": "CodeIgniter",
 			"website": "http://cibonfire.com"
-		},
-		"Bootstrap Table": {
-			"cats": [
-				"12"
-			],
-			"html": "<link[^>]+href=\"[^>]*bootstrap-table(?:\\.min)?\\.css",
-			"icon": "Bootstrap Table.svg",
-			"implies": [
-				"Bootstrap",
-				"jQuery"
-			],
-			"script": "bootstrap-table(?:\\.min)?\\.js",
-			"website": "http://bootstrap-table.wenzhixin.net.cn/"
 		},
 		"BrowserCMS": {
 			"cats": [
@@ -1018,19 +930,6 @@
 			},
 			"script": "/cargo\\.",
 			"website": "http://cargocollective.com"
-		},
-		"Catberry.js": {
-			"cats": [
-				"12",
-				"18"
-			],
-			"env": "^catberry$",
-			"headers": {
-				"X-Powered-By": "Catberry"
-			},
-			"icon": "Catberry.js.png",
-			"implies": "Node.js",
-			"website": "http://catberry.org"
 		},
 		"Catwalk": {
 			"cats": [
@@ -1425,14 +1324,6 @@
 			"script": "/d3(?:\\. v\\d+)?(?:\\.min)?\\.js",
 			"website": "http://d3js.org"
 		},
-		"DHTMLX": {
-			"cats": [
-				"12"
-			],
-			"icon": "DHTMLX.png",
-			"script": "dhtmlxcommon\\.js",
-			"website": "http://dhtmlx.com"
-		},
 		"DM Polopoly": {
 			"cats": [
 				"1"
@@ -1534,15 +1425,6 @@
 			},
 			"website": "http://dle-news.ru"
 		},
-		"DataTables": {
-			"cats": [
-				"12"
-			],
-			"icon": "DataTables.png",
-			"implies": "jQuery",
-			"script": "dataTables.*\\.js",
-			"website": "http://datatables.net"
-		},
 		"David Webbox": {
 			"cats": [
 				"22"
@@ -1582,15 +1464,6 @@
 			"implies": "PHP",
 			"script": "dedeajax",
 			"website": "http://dedecms.com"
-		},
-		"Deployd": {
-			"cats": [
-				"12"
-			],
-			"env": "^dpd$",
-			"icon": "Deployd.png",
-			"script": "dpd\\.js",
-			"website": "http://deployd.com"
 		},
 		"DirectAdmin": {
 			"cats": [
@@ -1634,16 +1507,6 @@
 			},
 			"website": "http://discuz.com"
 		},
-		"Disqus": {
-			"cats": [
-				"15"
-			],
-			"env": "^DISQUS",
-			"html": "<div[^>]+id=\"disqus_thread\"",
-			"icon": "Disqus.svg",
-			"script": "disqus_url",
-			"website": "http://disqus.com"
-		},
 		"Django": {
 			"cats": [
 				"18"
@@ -1661,15 +1524,6 @@
 			"icon": "Django CMS.png",
 			"implies": "Django",
 			"website": "http://django-cms.org"
-		},
-		"Dojo": {
-			"cats": [
-				"12"
-			],
-			"env": "^dojo$",
-			"icon": "Dojo.png",
-			"script": "([\\d.]+)/dojo/dojo(?:\\.xd)?\\.js\\;version:\\1",
-			"website": "http://dojotoolkit.org"
 		},
 		"Dokeos": {
 			"cats": [
@@ -2628,13 +2482,6 @@
 			"icon": "HP.svg",
 			"website": "http://hp.com"
 		},
-		"HP ProCurve": {
-			"cats": [
-				"37"
-			],
-			"icon": "HP.svg",
-			"website": "http://hp.com/networking"
-		},
 		"HP System Management": {
 			"cats": [
 				"46"
@@ -2989,14 +2836,6 @@
 			},
 			"icon": "Intel Active Management Technology.png",
 			"website": "http://intel.com"
-		},
-		"IntenseDebate": {
-			"cats": [
-				"15"
-			],
-			"icon": "IntenseDebate.png",
-			"script": "intensedebate\\.com",
-			"website": "http://intensedebate.com"
 		},
 		"Intercom": {
 			"cats": [
@@ -3580,19 +3419,6 @@
 			"implies": "PHP",
 			"website": "http://livestreetcms.com"
 		},
-		"Livefyre": {
-			"cats": [
-				"15"
-			],
-			"env": [
-				"^fyre$",
-				"^FyreLoader$"
-			],
-			"html": "<[^>]+(?:id|class)=\"livefyre",
-			"icon": "Livefyre.png",
-			"script": "livefyre_init\\.js",
-			"website": "http://livefyre.com"
-		},
 		"Liveinternet": {
 			"cats": [
 				"10"
@@ -3803,14 +3629,6 @@
 				"generator": "MaxSite CMS"
 			},
 			"website": "http://max-3000.com"
-		},
-		"MediaElement.js": {
-			"cats": [
-				"14"
-			],
-			"env": "^mejs$",
-			"icon": "MediaElement.js.png",
-			"website": "http://mediaelementjs.com"
 		},
 		"MediaTomb": {
 			"cats": [
@@ -4063,16 +3881,6 @@
 				"generator": "Movable Type"
 			},
 			"website": "http://movabletype.org"
-		},
-		"Moxa": {
-			"cats": [
-				"37"
-			],
-			"headers": {
-				"Server": "MoxaHttp(?:/([\\d.]+))?\\;version:\\1"
-			},
-			"icon": "Moxa.png",
-			"website": "http://moxa.com"
 		},
 		"Mozard Suite": {
 			"cats": [
@@ -4924,16 +4732,6 @@
 			"icon": "Quantcast.png",
 			"script": "edge\\.quantserve\\.com/quant\\.js",
 			"website": "http://www.quantcast.com"
-		},
-		"Question2Answer": {
-			"cats": [
-				"15"
-			],
-			"html": "<!-- Powered by Question2Answer",
-			"icon": "question2answer.png",
-			"implies": "PHP",
-			"script": "\\./qa-content/qa-page\\.js\\?([0-9.]+)\\;version:\\1",
-			"website": "http://www.question2answer.org"
 		},
 		"Quick.CMS": {
 			"cats": [
@@ -5835,15 +5633,6 @@
 			},
 			"website": "https://www.storyblok.com"
 		},
-		"SublimeVideo": {
-			"cats": [
-				"14"
-			],
-			"env": "^sublimevideo$",
-			"icon": "SublimeVideo.png",
-			"script": "cdn\\.sublimevideo\\.net/js/[a-z\\d]+\\.js",
-			"website": "http://sublimevideo.net"
-		},
 		"Subrion": {
 			"cats": [
 				"1"
@@ -6308,16 +6097,6 @@
 			"script": "tracking\\.veoxa\\.com",
 			"website": "http://veoxa.com"
 		},
-		"VideoJS": {
-			"cats": [
-				"14"
-			],
-			"env": "^VideoJS$",
-			"html": "<div[^>]+class=\"video-js+\">",
-			"icon": "VideoJS.png",
-			"script": "zencdn\\.net/c/video\\.js",
-			"website": "http://videojs.com"
-		},
 		"VigLink": {
 			"cats": [
 				"36"
@@ -6334,14 +6113,6 @@
 			"html": "<[^>]+=\"vgn-?ext",
 			"icon": "Vignette.png",
 			"website": "http://www.vignette.com"
-		},
-		"Vimeo": {
-			"cats": [
-				"14"
-			],
-			"html": "(?:<(?:param|embed)[^>]+vimeo\\.com/moogaloop|<iframe[^>]player\\.vimeo\\.com)",
-			"icon": "Vimeo.png",
-			"website": "http://vimeo.com"
 		},
 		"Vinala": {
 			"cats": [
@@ -6549,16 +6320,6 @@
 			},
 			"icon": "Microsoft.svg",
 			"website": "http://microsoft.com/windowsserver"
-		},
-		"Wink": {
-			"cats": [
-				"26",
-				"12"
-			],
-			"env": "^wink$",
-			"icon": "Wink.png",
-			"script": "(?:_base/js/base|wink).*\\.js",
-			"website": "http://winktoolkit.org"
 		},
 		"Winstone Servlet Container": {
 			"cats": [
@@ -6786,14 +6547,6 @@
 			],
 			"icon": "YouTrack.png",
 			"website": "http://www.jetbrains.com/youtrack/"
-		},
-		"YouTube": {
-			"cats": [
-				"14"
-			],
-			"html": "<(?:param|embed|iframe)[^>]+youtube(?:-nocookie)?\\.com/(?:v|embed)",
-			"icon": "YouTube.png",
-			"website": "http://www.youtube.com"
 		},
 		"ZK": {
 			"cats": [
@@ -7132,19 +6885,6 @@
 			"script": "jquery\\.sparkline.*\\.js",
 			"website": "http://omnipotent.net/jquery.sparkline/"
 		},
-		"jQuery UI": {
-			"cats": [
-				"12"
-			],
-			"icon": "jQuery UI.svg",
-			"implies": "jQuery",
-			"script": [
-				"jquery-ui(?:-|\\.)([\\d.]*\\d)[^/]*\\.js\\;version:\\1",
-				"([\\d.]+)/jquery-ui(?:\\.min)?\\.js\\;version:\\1",
-				"jquery-ui.*\\.js"
-			],
-			"website": "http://jqueryui.com"
-		},
 		"jqPlot": {
 			"cats": [
 				"25"
@@ -7174,15 +6914,6 @@
 			},
 			"icon": "lighttpd.png",
 			"website": "http://www.lighttpd.net"
-		},
-		"math.js": {
-			"cats": [
-				"12"
-			],
-			"env": "^mathjs$",
-			"icon": "math.js.png",
-			"script": "math(?:\\.min)?\\.js",
-			"website": "http://mathjs.org"
 		},
 		"mini_httpd": {
 			"cats": [
@@ -7430,17 +7161,6 @@
 				"SQLite"
 			],
 			"website": "http://www.phpliteadmin.org/"
-		},
-		"prettyPhoto": {
-			"cats": [
-				"12"
-			],
-			"env": "pp_(?:alreadyInitialized|descriptions|images|titles)",
-			"html": "(?:<link [^>]*href=\"[^\"]*prettyPhoto(?:\\.min)?\\.css|<a [^>]*rel=\"prettyPhoto)",
-			"icon": "prettyPhoto.png",
-			"implies": "jQuery",
-			"script": "jquery\\.prettyPhoto\\.js",
-			"website": "http://no-margin-for-errors.com/projects/prettyphoto-jquery-lightbox-clone/"
 		},
 		"sIFR": {
 			"cats": [
